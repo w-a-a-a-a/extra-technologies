@@ -1,0 +1,88 @@
+type: GenericCrafter
+size: 4
+hasPower: true
+hasItems: false
+hasLiquids: true
+craftEffect: none
+name: Air intake v2
+description: Takes air from the atmosphere, requires more power, but collects much more air
+researchCostMultiplier: 3
+consumes: {
+  power: 8
+}
+craftTime: 30
+health: 810
+outputLiquid: air/1.2
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -heat
+      color: 902dc4b4
+      glowScale: 2
+    }
+    {
+      type: DrawParticles
+      alpha: 0.125
+      color: fefefe
+      particleLife: 120
+      particleRad: 30
+      particleRotation: 1
+      particles: 170
+      particleSize: 1
+      poly: true
+      sides: 5
+    }
+    {
+      type: DrawParticles
+      alpha: 0.1
+      color: fefefe
+      particleLife: 240
+      particleRad: 40
+      particleRotation: 2
+      particles: 150
+      particleSize: 2
+      rotateScl: 0.8
+      poly: false
+    }
+    {
+      type: DrawParticles
+      alpha: 0.07
+      color: fefefe
+      particleLife: 240
+      particleRad: 40
+      particleRotation: 3
+      particles: 140
+      particleSize: 2.4
+      rotateScl: 0.56
+      poly: true
+      sides: 8
+    }
+    {
+      type: DrawParticles
+      alpha: 0.07
+      color: fefefe
+      particleLife: 500
+      particleRad: 60
+      particleRotation: 1
+      particles: 60
+      particleSize: 3.8
+      rotateScl: 1.6
+      reverse: true
+      poly: true
+      sides: 5
+    }
+  ]
+}
+category: crafting
+research: airin
+requirements: [
+  graphite/60
+  lead/200
+  silicon/100
+  plastanium/60
+]

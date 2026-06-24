@@ -1,0 +1,74 @@
+type: GenericCrafter
+size: 3
+squareSprite: false
+hasPower: true
+hasItems: false
+hasLiquids: true
+craftEffect: none
+name: Air intake v1
+description: Takes air from the atmosphere
+researchCostMultiplier: 4
+health: 590
+consumes: {
+  power: 3
+}
+craftTime: 30
+outputLiquid: air/0.4
+drawer: {
+  type: DrawMulti
+  drawers: [
+   {
+      type: DrawGlowRegion
+      suffix: -heat
+      color: 902dc4b4
+      glowScale: 2
+    }
+    {
+    type: DrawDefault
+    }
+    {
+      type: DrawParticles
+      alpha: 0.1
+      color: fefefe
+      particleLife: 240
+      particleRad: 30
+      particleRotation: 1
+      particles: 150
+      particleSize: 1
+      poly: true
+      sides: 5
+    }
+    {
+      type: DrawParticles
+      alpha: 0.05
+      color: fefefe
+      particleLife: 480
+      particleRad: 40
+      particleRotation: 2
+      particles: 130
+      particleSize: 2
+      rotateScl: 0.8
+      poly: false
+    }
+    {
+      type: DrawParticles
+      alpha: 0.1
+      color: fefefe
+      particleLife: 360
+      particleRad: 50
+      particleRotation: 1
+      particles: 110
+      particleSize: 2.5
+      rotateScl: 0.8
+      poly: true
+      sides: 5
+    }
+  ]
+}
+category: crafting
+research: core-j1
+requirements: [
+  graphite/90
+  lead/100
+  silicon/80
+]

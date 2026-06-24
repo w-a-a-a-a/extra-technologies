@@ -1,0 +1,71 @@
+type: GenericCrafter
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftEffect: none
+name: Air purifier
+description: "Purifies atmospheric air using 3 filters made of titanium, aerogel and coal. Outputs purified air and [#225522]unusable[] toxic gases."
+researchCostMultiplier: 3
+ambientSound: airpuri-amb
+ambientSoundVolume: 0.5
+liquidCapacity: 400
+consumes: {
+  power: 4
+  liquids: [
+  air/1.2
+  ]
+  items: [
+  aerogel/3
+  coal/4
+  ]
+}
+liquidOutputDirections: [0, 3, 2, 1]
+dumpExtraLiquid: true
+craftTime: 120
+health: 400
+outputLiquids: [
+puri-air/0.45
+toxic-gas/0.15
+puri-air/0.45
+toxic-gas/0.15
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawDefault
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: air
+      suffix: -air
+      alpha: 0.95
+    }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: puri-air
+      suffix: -air2
+      alpha: 0.95
+    }
+    {
+    type: DrawLiquidRegion
+    drawLiquid: toxic-gas
+    suffix: -tox
+    alpha: 0.95
+    }
+    {
+    type: drawRegion
+    suffix: -top
+    color: ffffff
+    }
+  ]
+}
+category: crafting
+research: v2airin
+requirements: [
+  graphite/70
+  silicon/160
+  plastanium/30
+  titanium/80
+]

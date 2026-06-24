@@ -1,0 +1,20 @@
+{
+   "name": "extra",
+   "description": "DO NOT BUILD THIS UNDER ANY CIRCUMSTANCES, OTHERWISE THE UNIVERSE WILL COLLAPSE!!! (I have personally verified this)
+   "health": 0,
+   "size": 0,
+   "type": "CoreBlock",
+   "unitCapModifer": 0,
+   "isFirstTier": true,
+   "category": "effect",
+   "itemCapacity": 0,
+   "incinerateNonBuildable": true,
+   "unitType": "corvus",
+   "research": {
+    "root": true,
+    "name": "extra technology",
+    "planet": "serpulo",
+    "requiresUnlock": false
+   },
+   "alwaysUnlocked": true
+}

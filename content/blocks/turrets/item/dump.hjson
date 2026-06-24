@@ -1,0 +1,158 @@
+type: ItemTurret
+name: Dump
+description: shoots compressed toxic waste/residue at close range. dont try to upgrade its range. if the projectile travels even 200 meters, it will self-destruct 4 times and create 3 black holes. We tested it. Just dont   
+size: 3
+squareSprite: false
+reload: 64
+range: 80
+recoil: 0.2
+coolantMultiplier: 0.8
+researchCostMultiplier: 3
+maxAmmo: 20
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+shoot: {
+  firstShotDelay: 20
+  shots: 6
+  shotDelay: 0
+}
+ammoPerShot: 2
+drawer: {
+  type: DrawTurret
+  layer: -1
+  parts: [
+    {
+      type: RegionPart
+      suffix: -body
+      mirror: true
+      progress: warmup
+      under: false
+      moveX: 0
+      moveY: 0
+      moveRot: 0
+      layer: -1
+    }
+    {
+      type: RegionPart
+      suffix: -wing1
+      mirror: true
+      progress: warmup
+      under: true 
+      moveX: -2
+      moveY: -0.5
+      moveRot: -30
+      layer: -2
+    }
+    {
+      type: RegionPart
+      suffix: -wing2
+      mirror: true
+      progress: warmup
+      under: true
+      moveX: 0.4
+      moveY: 0.6
+      moveRot: -15
+      layer: -2
+    }
+    {
+      type: RegionPart
+      suffix: -a
+      mirror: false
+      progress: recoil
+      under: true
+      moveX: 0
+      moveY: -3
+      moveRot: 0
+      layer: -2
+    }
+  ]
+}
+category: turret
+research: core-j1
+shootSound: shootAfflict
+requirements: [
+  silicon/180
+  titanium/150
+  plastanium/70
+  aerogel/10
+]
+ammoTypes: {
+  toxic-waste: {
+    frontColor: 7eb180
+    backColor: 7ed880
+    trailColor: 6bff6d
+    hitEffect: flakExplosion
+    type: BasicBulletType
+    speed: 5
+    width: 11
+    height: 14
+    lifetime: 15
+    pierce: true
+    pierceCap: 20
+    damage: 85
+    ammoMultiplier: 1
+    drawSize: 16
+    status: corroded
+    fragBullets: 36
+    fragVelocityMin: 0.4
+    fragLifeMin: 0.45
+        fragBullet: {
+      frontColor: 7eb180
+      backColor: 7ed880
+      trailColor: 6bff6d
+      type: BasicBulletType
+      speed: 2
+      lifetime: 30
+      width: 6
+      height: 9
+      pierce: true
+      pierceCap: 5
+      damage: 20
+      inaccuracy: 7
+      status: corroded
+      despawnSound: shootStell
+      hitSound: shootStell
+    }
+  }
+  toxic-resid: {
+    frontColor: 7eb180
+    backColor: 7ed880
+    trailColor: 6bff6d
+    hitEffect: flakExplosion
+    type: BasicBulletType
+    speed: 5
+    width: 11
+    height: 14
+    lifetime: 10
+    pierce: false
+    damage: 50
+    status: corroded
+    ammoMultiplier: 1
+    drawSize: 8
+    fragBullets: 120
+    fragVelocityMin: 0.4
+    fragLifeMin: 8
+    fragLifeMax: 10
+    inaccuracy: 10
+      fragBullet: {
+      frontColor: 7eb180
+      backColor: 7ed880
+      trailColor: 6bff6d
+      type: BasicBulletType
+      speed: 0.05
+      lifetime: 60
+      width: 1
+      height: 1
+      pierce: true
+      pierceCap: 2
+      damage: 3
+      status: corroded
+      despawnEffect: none
+      }
+    }
+  }
+rotate: false

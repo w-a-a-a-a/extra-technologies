@@ -1,0 +1,70 @@
+type: ConsumeGenerator
+name: Hi-pressure turbine
+description: "7"
+size: 3
+category: power
+research: core-j1
+requirements: [
+  graphite/120
+  silicon/70
+  thorium/40
+  phase-fabric/20
+]
+powerProduction: 11.23
+itemDuration: 60
+hasLiquids: true 
+hasItems: true
+hasPower: true
+itemCapacity: 15
+liquidCapacity: 400
+consumes: {
+  items: [
+  pyratite/2
+  ]
+  liquids: [
+    water/1.4
+    ]
+}
+ambientSound: loopSmelter
+ambientSoundVolume: 0.3
+warmupSpeed: 0.005
+dynamicPower: true
+generateEffect: {
+  type: RadialEffect
+  amount: 16
+  lengthOffset: 5
+  layer: 118
+  effect: {
+    type: ParticleEffect
+    particles: 6
+    lifetime: 240
+    sizeFrom: 1.8
+    sizeTo: 0.6
+    colorFrom: eeeeee44
+    colorTo: cccccc00
+    length: 30
+    baseLength: 5
+    cone: 360
+    layer: 80
+  }
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -rotor
+      rotateSpeed: 20
+      blurThresh: 2
+      progress: warmup
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+researchCostMultiplier: 0.5

@@ -1,0 +1,13 @@
+name: Purified air
+boilPoint: 0.4
+color: dedede
+heatCapacity: 0.5
+gasColor: cdcdcd
+gas: true
+research: {
+  parent: core-j1 
+  objectives: [
+    v2airin
+    aerogel
+  ]
+}
