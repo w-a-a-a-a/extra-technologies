@@ -1,0 +1,18 @@
+name: Toxic gases
+description: Toxic gases. Please do not taste. 
+boilPoint: 0.7
+color: 6da056
+heatCapacity: -0.6
+gasColor: 6da056
+gas: true
+explosiveness: 0.25
+flammability: 0.34
+radioactivity: 0.26
+status: corroded
+research: {
+  parent: air
+  objectives: [
+    v2airin
+    aerogel
+  ]
+}

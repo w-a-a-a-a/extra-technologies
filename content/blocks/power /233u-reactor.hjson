@@ -1,0 +1,51 @@
+name: 233 Uranium reactor
+description: produces large amounts of energy from 233 uranium
+type: NuclearReactor
+health: 890
+itemCapacity: 70
+size: 5
+ambientSound: loopThoriumReactor
+ambientSoundVolume: 0.9
+explosionRadius: 70000
+explosionDamage: 4600
+explosionPuddleRange: 800
+explosionPuddles: 8900
+explosionPuddleLiquid: toxic-gas
+explosionPuddleAmount: 800000
+hasLiquids: true
+powerProduction: 90
+itemDuration: 120
+heating: 0.007
+heatOutput: 18
+heatWarmupRate: 1.4
+fuelItem: u233
+explodeEffect: {
+  type: ParticleEffect
+  particles: 100
+  lifetime: 300
+  sizeFrom: 10
+  sizeTo: 60
+  colorFrom:  94A74299
+  colorTo: 5A681C00
+  length: 600
+  baseLength: 50
+  cone: 360
+  layer: 80
+}
+warmupSpeed: 0.0005
+consumes: {
+  items: [
+    u233/1
+  ]
+  liquid: cryofluid/0.3
+}
+requirements: [
+  phase-fabric/280
+  plastanium/270
+  thorium/170
+  titanium/400
+  silicon/230
+]
+category: power
+research: hi-pressure-turb
+researchCostMultiplier: 0.9

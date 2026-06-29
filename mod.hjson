@@ -3,6 +3,6 @@ displayName: "[red[]]Extra [white[]]Technologies"
 description: "adds a lot, oh no, a little bit of content to Serpulo: new turrets, factories, reactors... [#303030[]]give it a star on github pls"
 author: "[purple[]]waaaa"
 subtitle: "hello)"
-version: 0.0.2
+version: 0.0.3
 minGameVersion: 158
 hidden: true

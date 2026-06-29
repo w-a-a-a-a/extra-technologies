@@ -1,0 +1,8 @@
+name: Compressed toxic waste
+description: "[#8b936d]toxic waste[], garbage waste, trash, [#ff3333]shit[], [#ffaa00]bullshit[], junk, crap.. Just look at it."
+charge: 0.3
+explosiveness: 1.3
+flammability: 1
+radioactivity: 0.9
+color: 71933a
+research: toxic-resid

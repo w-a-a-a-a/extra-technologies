@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 4
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 40
+craftEffect: none
+name: Uranium separator
+description: Separates uranium isotopes. Produces pure uranium-233, used in mod technologies. The remains are smelted into uranium-232, which requires permanent lead shielding.
+researchCostMultiplier: 0.5
+ambientSound: loopCircuit
+ambientSoundVolume: 0.5
+consumes: {
+  power: 9
+  liquids: [
+  cryofluid/0.3
+  ]
+  items: [
+  irr-thorium/10
+  lead/20
+  ]
+}
+craftTime: 240
+health: 580
+outputItems: [
+  u233/7
+  u232/3
+]
+drawer: {
+  type: DrawDefault
+}
+category: crafting
+research: thorium-irradiator
+requirements: [
+  phase-fabric/60
+  silicon/300
+  plastanium/60
+  titanium/90
+]

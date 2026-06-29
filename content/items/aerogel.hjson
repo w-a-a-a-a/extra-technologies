@@ -1,0 +1,6 @@
+name: aerogel
+description: very light and very porous material, used in factories and turrets very often, 
+charge: 0.04
+explosiveness: 0.03
+color: c9c9c9
+research: core-j1

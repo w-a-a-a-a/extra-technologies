@@ -1,0 +1,8 @@
+name: "233 Uranium"
+description: "A fairly good isotope, fortunately it wont destroy the planet, and is usually used in uranium reactors. It is produced by separation from irradiated thorium"
+charge: 0.0
+explosiveness: 0.2
+flammability: 0.1
+radioactivity: 1.6
+color: 3f7600
+research: irr-thorium

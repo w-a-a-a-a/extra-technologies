@@ -1,0 +1,7 @@
+name: "Irradiated thorium"
+description: irradiated thorium, it is possible to separate uranium 233 and uranium 232 from it
+explosiveness: 0.3
+flammability: 0.0
+radioactivity: 1.2
+color: 693594
+research: core-j1

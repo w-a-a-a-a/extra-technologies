@@ -1,0 +1,36 @@
+type: GenericCrafter
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftEffect: none
+name: Thorium Irradiator
+description: Irradiates thorium, converting it into irradiated thorium for further processing
+ambientSound: airpuri-amb
+ambientSoundVolume: 0.6
+researchCostMultiplier: 0.4
+consumes: {
+  power: 8
+  liquids: [
+  cryofluid/0.1
+  ]
+  items: [
+  thorium/5
+  ]
+}
+craftTime: 120
+health: 670
+outputItem: irr-thorium/5
+craftEffect: none
+drawer: {
+  type: DrawDefault
+}
+category: crafting
+research: core-j1
+requirements: [
+  silicon/70
+  lead/160
+  plastanium/50
+  titanium/190
+  thorium/20
+]

@@ -1,0 +1,8 @@
+name: "232 Uranium"
+description: It is highly radioactive and should be stored in lead containers. It is used only in RTGs.
+charge: 0.0
+explosiveness: 0.9
+flammability: 0.1
+radioactivity: 2.4
+color: 648200
+research: u233

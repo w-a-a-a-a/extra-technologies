@@ -1,0 +1,12 @@
+name: Air
+boilPoint: 0.5
+color: dedede
+heatCapacity: 0.3
+gasColor: cdcdcd
+gas: true
+research: {
+  parent: core-j1 
+  objectives: [
+    airin
+  ]
+}

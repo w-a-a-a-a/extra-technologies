@@ -1,0 +1,57 @@
+type: GenericCrafter
+size: 3
+hasPower: true
+hasItems: true
+hasLiquids: true
+craftEffect: none
+name: Gas cooler
+description: Сools the toxic gas to ice and then crushes it into powder
+researchCostMultiplier: 0.6
+consumes: {
+  power: 4
+  liquids: [
+  toxic-gas/0.25
+  cryofluid/0.2
+  ]
+}
+craftTime: 120
+ambientSound: loopElectricHum
+ambientSoundVolume: 0.4
+craftEffect: {
+  type: RadialEffect
+  amount: 16
+  lengthOffset: 5
+  layer: 118
+  effect: {
+    type: ParticleEffect
+    particles: 6
+    lifetime: 280
+    sizeFrom: 1.2
+    sizeTo: 0.6
+    colorFrom: eeeeee22
+    colorTo: cccccc00
+    length: 22
+    baseLength: 5
+    cone: 360
+    layer: 80
+  }
+}
+health: 560
+outputItem: toxic-resid/1
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawDefault
+    }
+  ]
+}
+category: crafting
+research: airpuri
+requirements: [
+  graphite/90
+  silicon/60
+  plastanium/70
+  titanium/180
+  aerogel/25
+]
